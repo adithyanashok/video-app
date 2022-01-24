@@ -3,6 +3,7 @@ import './Videos.css'
 import {VideoItems} from '../../Helpers/Helpers'
 import {Row, Col} from 'react-bootstrap'
 
+
 function Videos({VideoList}) { 
   
   return (
@@ -16,6 +17,7 @@ function Videos({VideoList}) {
                     <video controls>
                       <source src={obj.VideoList} ></source>
                     </video>
+                    <a className='btn btn-primary' href={obj.VideoList} download ><i class="fas fa-download"></i> Download</a>
                   </div>
               </Col>
                  );
